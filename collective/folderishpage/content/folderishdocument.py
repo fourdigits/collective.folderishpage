@@ -17,9 +17,6 @@ ATFolderishDocumentSchema = document.ATDocumentSchema + ConstrainTypesMixinSchem
 
 ))
 
-ATFolderishDocumentSchema['title'].storage = atapi.AnnotationStorage()
-ATFolderishDocumentSchema['description'].storage = atapi.AnnotationStorage()
-
 schemata.finalizeATCTSchema(ATFolderishDocumentSchema, folderish=True, moveDiscussion=False)
 
 class ATFolderishDocument(folder.ATFolder, document.ATDocument):
@@ -29,8 +26,5 @@ class ATFolderishDocument(folder.ATFolder, document.ATDocument):
     portal_type = "FolderishDocument"
     archetype_name = "Page"
     schema = ATFolderishDocumentSchema
-
-    title = atapi.ATFieldProperty('title')
-    description = atapi.ATFieldProperty('description')
 
 atapi.registerType(ATFolderishDocument, PROJECTNAME)
