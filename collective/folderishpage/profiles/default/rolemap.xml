@@ -4,6 +4,7 @@
     <permission name="collective.folderishpage: Add FolderishDocument" acquire="False">
       <role name="Manager" />
       <role name="Contributor" />
+      <role name="Owner"/>
     </permission>
   </permissions>
 </rolemap>
