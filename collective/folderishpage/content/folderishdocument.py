@@ -13,7 +13,7 @@ from collective.folderishpage import folderishpageMessageFactory as _
 from collective.folderishpage.interfaces import IATFolderishDocument
 from collective.folderishpage.config import PROJECTNAME
 
-ATFolderishDocumentSchema = document.ATDocumentSchema + ConstrainTypesMixinSchema + schemata.NextPreviousAwareSchema + atapi.Schema((
+ATFolderishDocumentSchema = document.ATDocumentSchema.copy() + ConstrainTypesMixinSchema.copy() + schemata.NextPreviousAwareSchema.copy() + atapi.Schema((
 
 ))
 

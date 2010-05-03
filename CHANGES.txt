@@ -1,5 +1,8 @@
 Changelog
 =========
+[0.4]
+- make copy of schemas, not use them
+
 [0.3]
 - allow owner to add folderishpage, same settings as folder/page
 
@@ -11,4 +14,3 @@ Changelog
 ----------------
 
 * Initial release
-
