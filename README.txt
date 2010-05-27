@@ -2,6 +2,11 @@
 - Questions and comments to rob@fourdigits.nl
 - Report bugs at rob@fourdigits.nl
 
+[0.5]
+- added relatedItems to folderishpages [ralphjacobs]
+- updated metadata.xml info [ralphjacobs]
+- update history info [ralphjacobs]
+
 [0.4]
 - make copy of schemas, not use them
 

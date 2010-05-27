@@ -17,7 +17,8 @@ ATFolderishDocumentSchema = document.ATDocumentSchema.copy() + ConstrainTypesMix
 
 ))
 
-schemata.finalizeATCTSchema(ATFolderishDocumentSchema, folderish=True, moveDiscussion=False)
+#folderish=False is intended, because we would like to have relatedItems
+schemata.finalizeATCTSchema(ATFolderishDocumentSchema, folderish=False, moveDiscussion=False)
 
 class ATFolderishDocument(folder.ATFolder, document.ATDocument):
     """A page in the site. Can contain rich text."""
