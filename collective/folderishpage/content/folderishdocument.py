@@ -1,4 +1,5 @@
-"""Definition of the ATFolderishDocument content type
+"""
+    Definition of the ATFolderishDocument content type
 """
 
 from zope.interface import implements, directlyProvides
@@ -13,12 +14,17 @@ from collective.folderishpage import folderishpageMessageFactory as _
 from collective.folderishpage.interfaces import IATFolderishDocument
 from collective.folderishpage.config import PROJECTNAME
 
-ATFolderishDocumentSchema = document.ATDocumentSchema.copy() + ConstrainTypesMixinSchema.copy() + schemata.NextPreviousAwareSchema.copy() + atapi.Schema((
+ATFolderishDocumentSchema = document.ATDocumentSchema.copy()
+ATFolderishDocumentSchema += ConstrainTypesMixinSchema.copy()
+ATFolderishDocumentSchema += schemata.NextPreviousAwareSchema.copy()
+ATFolderishDocumentSchema += atapi.Schema((
 
 ))
 
 #folderish=False is intended, because we would like to have relatedItems
-schemata.finalizeATCTSchema(ATFolderishDocumentSchema, folderish=False, moveDiscussion=False)
+schemata.finalizeATCTSchema(ATFolderishDocumentSchema,
+                            folderish=False,
+                            moveDiscussion=False)
 
 class ATFolderishDocument(folder.ATFolder, document.ATDocument):
     """A page in the site. Can contain rich text."""
