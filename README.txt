@@ -2,6 +2,12 @@
 - Questions and comments to rob@fourdigits.nl
 - Report bugs at rob@fourdigits.nl
 
+[0.6]
+- updated for plone 4.0 [ralphjacobs]
+- PEP8 fixes [ralphjacobs]
+- imports from plone.app.folder [ralphjacobs]
+- changed storage of text to attributestorage for cmfdifftool [ralphjacobs]
+
 [0.5]
 - added relatedItems to folderishpages [ralphjacobs]
 - updated metadata.xml info [ralphjacobs]
