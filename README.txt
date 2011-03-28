@@ -1,24 +1,11 @@
+collective.folderishpage
+========================
+
+.. contents::
+
+
 - Code repository: http://svn.plone.org/svn/collective/collective.folderishpage
 - Questions and comments to rob@fourdigits.nl
 - Report bugs at rob@fourdigits.nl
 
-[0.6]
-- updated for plone 4.0 [ralphjacobs]
-- PEP8 fixes [ralphjacobs]
-- imports from plone.app.folder [ralphjacobs]
-- changed storage of text to attributestorage for cmfdifftool [ralphjacobs]
 
-[0.5]
-- added relatedItems to folderishpages [ralphjacobs]
-- updated metadata.xml info [ralphjacobs]
-- update history info [ralphjacobs]
-
-[0.4]
-- make copy of schemas, not use them
-
-[0.3]
-- allow owner to add folderishpage, same settings as folder/page
-
-[0.2]
-- Fix annotation storage.
-- Fix tinymce.xml

@@ -8,28 +8,16 @@ from setuptools import setup, find_packages
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
-version = '0.6'
+version = '0.7dev'
 
 long_description = (
     read('README.txt')
     + '\n' +
-    'Change history\n'
-    '**************\n'
-    + '\n' +
     read('CHANGES.txt')
-    + '\n' +
-    'Detailed Documentation\n'
-    '**********************\n'
     + '\n' +
     read('collective', 'folderishpage', 'README.txt')
     + '\n' +
-    'Contributors\n'
-    '************\n'
-    + '\n' +
     read('CONTRIBUTORS.txt')
-    + '\n' +
-    'Download\n'
-    '********\n'
     )
 
 tests_require=['zope.testing']
@@ -61,12 +49,8 @@ setup(name='collective.folderishpage',
       extras_require=dict(tests=tests_require),
       test_suite = 'collective.folderishpage.tests.test_docs.test_suite',
       entry_points="""
-      # -*- entry_points -*-
-      [distutils.setup_keywords]
-      paster_plugins = setuptools.dist:assert_string_list
-
-      [egg_info.writers]
-      paster_plugins.txt = setuptools.command.egg_info:write_arg
+      [z3c.autoinclude.plugin]
+      target = plone
       """,
-      paster_plugins = ["ZopeSkel"],
+      # paster_plugins = ["ZopeSkel"],
       )

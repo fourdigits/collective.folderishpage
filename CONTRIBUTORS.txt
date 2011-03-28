@@ -1,2 +1,6 @@
-Four Digits, Author
+Contributors
+============
+
+- Four Digits, Author
+- Wouter Vanden Hove, <wouter@wvhconsulting.org>
 
