@@ -8,6 +8,9 @@ Changelog
 - Add `z3c.autoinclude` entry point for automatic ZCML loading in Plone 3.3+.
   [WouterVH]
 
+- Removed unsupported <require /> for set_schema on archetype content types. [WouterVH]
+  Cfr. http://plone.org/products/zopeskel/issues/32.
+
 
 0.6 (2010-12-29)
 ----------------

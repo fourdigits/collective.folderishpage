@@ -12,11 +12,6 @@
             interface="..interfaces.IATFolderishDocument"
             />
 
-        <require
-            permission="cmf.ModifyPortalContent"
-            set_schema="..interfaces.IATFolderishDocument"
-            />
-
     </class>
 
 </configure>
