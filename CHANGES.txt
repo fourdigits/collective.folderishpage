@@ -5,6 +5,10 @@ Changelog
 0.7 (unreleased)
 ----------------
 
+- Changed versioning to use Generic Setup since the previous method is removed in
+  CMFEditions >= 2.1
+  [robgietema]
+
 - Add `z3c.autoinclude` entry point for automatic ZCML loading in Plone 3.3+.
   [WouterVH]
 
