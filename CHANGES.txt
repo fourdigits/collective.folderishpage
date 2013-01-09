@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-0.7 (unreleased)
-----------------
+0.7-siwb (2013-01-09)
+---------------------
 
 - Changed versioning to use Generic Setup since the previous method is removed in
   CMFEditions >= 2.1
