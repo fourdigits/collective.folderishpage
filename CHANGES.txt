@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-0.9 (unreleased)
-----------------
+0.9-siwb (2013-04-12)
+---------------------
 
 - Nothing changed yet.
 
