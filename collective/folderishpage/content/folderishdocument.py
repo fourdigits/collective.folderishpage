@@ -28,7 +28,7 @@ ATFolderishDocumentSchema += atapi.Schema((
 
 #folderish=False is intended, because we would like to have relatedItems
 # Set text storage to AttributeStorage so we have history diff info
-ATFolderishDocumentSchema['text'].storage = AttributeStorage()
+#ATFolderishDocumentSchema['text'].storage = AttributeStorage()
 schemata.finalizeATCTSchema(ATFolderishDocumentSchema,
                             folderish=False,
                             moveDiscussion=False)
