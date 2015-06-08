@@ -29,6 +29,9 @@ ATFolderishDocumentSchema += atapi.Schema((
 #folderish=False is intended, because we would like to have relatedItems
 # Set text storage to AttributeStorage so we have history diff info
 #ATFolderishDocumentSchema['text'].storage = AttributeStorage()
+ATFolderishDocumentSchema['title'].storage = atapi.AnnotationStorage()
+ATFolderishDocumentSchema['description'].storage = atapi.AnnotationStorage()
+
 schemata.finalizeATCTSchema(ATFolderishDocumentSchema,
                             folderish=False,
                             moveDiscussion=False)
@@ -41,5 +44,8 @@ class ATFolderishDocument(folder.ATFolder, document.ATDocument):
     portal_type = "FolderishDocument"
     archetype_name = "Page"
     schema = ATFolderishDocumentSchema
+
+    title = atapi.ATFieldProperty('title')
+    description = atapi.ATFieldProperty('description')
 
 atapi.registerType(ATFolderishDocument, PROJECTNAME)
