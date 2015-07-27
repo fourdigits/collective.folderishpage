@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-0.11.annotation_storage (unreleased)
------------------
+0.11.annotation_storage (2015-07-27)
+------------------------------------
 
 - Nothing changed yet.
 
