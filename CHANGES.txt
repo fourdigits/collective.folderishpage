@@ -2,6 +2,12 @@ Changelog
 =========
 
 
+0.11.annotation2 (unreleased)
+-----------------------------
+
+- Nothing changed yet.
+
+
 0.11.annotation1 (2015-07-28)
 -----------------------------
 
