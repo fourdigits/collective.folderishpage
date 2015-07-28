@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-.annotation1 (unreleased)
-------------------
+.annotation1 (2015-07-28)
+-------------------------
 
 - Nothing changed yet.
 
